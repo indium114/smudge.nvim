@@ -110,10 +110,12 @@ function M.enable()
 
 	M.augroup = vim.api.nvim_create_augroup("Smudge", { clear = true })
 
-	vim.api.nvim_create_autocmd("CursorMoved", {
-		group = M.augroup,
-		callback = on_move,
-	})
+	vim.schedule(function()
+		vim.api.nvim_create_autocmd("CursorMoved", {
+			group = augroup,
+			callback = on_move,
+		})
+	end)
 end
 
 function M.disable()
