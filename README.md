@@ -8,7 +8,7 @@ https://github.com/user-attachments/assets/ab587779-27fc-41eb-8890-d310a44283d8
 
 ```lua
 {
-    "stikypiston/smudge.nvim",
+    "indium114/smudge.nvim",
     opts = {
         -- These are the default options. Leave the table blank (as in opts = {}) for this config, or customise it yourself!
         char = "░",        -- smear character
